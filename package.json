@@ -1,0 +1,56 @@
+{
+  "name": "erts-app",
+  "version": "0.0.0",
+  "description": "Description for Desktop App Template",
+  "productName": "Desktop App Template",
+  "appTitle": "Desktop App Template",
+  "appId": "com.app.erts-app",
+  "private": true,
+  "homepage": "./",
+  "main": "main/build/index.js",
+  "author": {
+    "name": "WahaWaher",
+    "email": "wahawaher@gmail.com",
+    "url": "https://github.com/WahaWaher"
+  },
+  "keywords": [
+    "electron",
+    "react",
+    "typescript",
+    "desktop"
+  ],
+  "repository": {
+    "provider": "github",
+    "url": "https://github.com/WahaWaher/erts-app"
+  },
+  "license": "MIT",
+  "scripts": {
+    "dev:ui": "cd ui && yarn dev:ui",
+    "dev:ts": "ttsc -w",
+    "dev:main": "ttsc && electron .",
+    "build:ui": "cd ui && yarn build:ui",
+    "build:pre": "rimraf ./main/build && yarn build:ui && ttsc && node ./scripts/build-pre.js",
+    "build:pre-quick": "rimraf ./main/build && ttsc && node ./scripts/build-pre.js",
+    "build:release": "rimraf ./main/build && yarn build:ui && ttsc && node ./scripts/build-release.js"
+  },
+  "devDependencies": {
+    "@types/electron-store": "^3.2.0",
+    "@zerollup/ts-transform-paths": "^1.7.18",
+    "deepmerge": "^4.2.2",
+    "electron": "^13.1.5",
+    "electron-builder": "^22.11.7",
+    "electron-debug": "^3.2.0",
+    "electron-devtools-installer": "^3.2.0",
+    "electron-reload": "^1.5.0",
+    "rimraf": "^3.0.2",
+    "ttypescript": "^1.5.12",
+    "types-package-json": "^2.0.39",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "electron-is-dev": "^2.0.0",
+    "electron-store": "^8.0.0",
+    "electron-window-state": "^5.0.3"
+  }
+}

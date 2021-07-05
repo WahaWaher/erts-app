@@ -1,0 +1,69 @@
+body {
+  font-family: 'Consolas';
+  color: #222;
+  font-size: 14px;
+  margin: 0;
+  overflow-x: hidden;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 .5em 0;
+}
+p {
+  margin: 0 0 1em 0;
+}
+button {
+  cursor: pointer;
+  display: inline-flex;
+  border-width: 0;
+  padding: 5px 15px;
+  background-color: #f1f1f1;
+}
+button:hover {
+  color: #fff;
+  background-color: #e11e50;
+}
+
+/**
+ * Header bar
+ */
+.header-bar {
+  padding: 10px 15px;
+  background-color: #f1f1f1;
+}
+
+/**
+ * Page Area
+ */
+.page-area {
+  padding: 15px;
+}
+
+/**
+ * Menu
+ */
+.menu-main {
+  display: flex;
+  padding: 0;
+  margin: 0 -8px;
+  list-style-type: none;
+}
+.menu-main > li {
+  font-size: 16px;
+  display: inline-flex;
+  margin: 0 8px;
+}
+.menu-main > li > a {
+  color: #222;
+  text-decoration: none;
+  transition: all .25s;
+}
+.menu-main > li > a.active {
+  color: #e11e50;
+  text-decoration: none;
+}
+.menu-main > li > a:hover,
+.menu-main > li > a:focus {
+  color: #e11e50;
+  text-decoration: none;
+  outline: none;
+}

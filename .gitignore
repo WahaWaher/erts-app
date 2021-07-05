@@ -1,0 +1,21 @@
+# dependencies
+/node_modules
+/ui/node_modules
+
+# dependencies
+/main/build
+/ui/build
+/release
+/build
+/temp
+
+# env
+# .env
+# .env.development
+# .env.production
+
+# misc
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+NOTES.md
